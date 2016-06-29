@@ -1,7 +1,7 @@
 {
 	"name": "tazzydemon/themes-pulseweb",
 	"description": "Silverstripe Themes folder for Pulse Website.",
-	"type": "silverstripe-themes-folder",
+	"type": "silverstripe-themes",
 
 	"authors": [{
 		"name": "Julian Warren",
