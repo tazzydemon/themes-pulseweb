@@ -1,7 +1,6 @@
 {
 	"name": "tazzydemon/themes-pulseweb",
 	"description": "Silverstripe Themes folder for Pulse Website.",
-	"type": "silverstripe-theme",
 
 	"authors": [{
 		"name": "Julian Warren",
@@ -12,9 +11,7 @@
 		"silverstripe/framework": "~3.1"
 	},
 	"extra": {
-		"installer-name": "",
-        	"installer-paths": {
-            		"themes": ["tazzydemon/themes-pulseweb"]
-        	}
+		"installer-name": "themes",
+
 	 }
 }
