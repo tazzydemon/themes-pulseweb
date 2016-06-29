@@ -10,7 +10,7 @@
 		"silverstripe/framework": "~3.1"
 	},
 	"extra": {
-		"installer-name": "themes",
+		"installer-name": "themes"
 
 	 }
 }
