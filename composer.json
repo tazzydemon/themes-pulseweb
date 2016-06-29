@@ -12,9 +12,9 @@
 		"silverstripe/framework": "~3.1"
 	},
 	"extra": {
-		"installer-name": "foundation",
+		"installer-name": "themes",
         	"installer-paths": {
-            		"themes/{$name}": ["vendor/package"]
+            		"themes": ["tazzydemon/themes-pulseweb"]
         	}
 	 }
 }
