@@ -14,7 +14,7 @@
 	"extra": {
 		"installer-name": "themes",
         	"installer-paths": {
-            		"themes": ["tazzydemon/themes-pulseweb"]
+            		"": ["tazzydemon/themes-pulseweb"]
         	}
 	 }
 }
