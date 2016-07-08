@@ -23,23 +23,21 @@
 <div id="fqv" style="position:fixed;top:40px;right:40px;z-index:999;color:#fff;"><p style="font-size:12px;background:rgba(0,0,0,0.75);padding:5px;margin-bottom:1px;line-height:1.2;"><span class="left">Media:</span> <span style="font-weight:bold;" class="show-for-xlarge">Extra Large</span><span style="font-weight:bold;" class="show-for-large">Large</span><span style="font-weight:bold;" class="show-for-medium">Medium</span><span style="font-weight:bold;" class="show-for-small">Small</span><span style="font-weight:bold;" class="show-for-landscape">Landscape</span><span style="font-weight:bold;" class="show-for-portrait">Portrait</span><span style="font-weight:bold;" class="show-for-touch">Touch</span></p></div>
 --%>
 <div class="wrapper" style="margin:0 auto">
-    <% include TopBar %>
     <!--Header and Primary Nav-->
     <header>
     <div class="row header" style="position:relative">
-        <div class="small-3 columns hikde-for-small">
+        <div class="large-12 columns push-1">
             <span class="logo">
-            <a href="/">{$SiteConfig.SiteLogo.SetHeight(80)}</a>
+            <a href="{$baseURL}"><img src="/themes/highlanders/images/combinedpu-gpe-ju.png"></a>
             </span>
         </div>
-        <div class="small-9 columns" >
-            <div class="row">
+    </div>
+    <div class="row header">
+
                 <%--   <div class=" small-12 columns ">&nbsp;</div> convenient spacer--%>
-                <div class="small-12 columns header-button-outer">
-<h1>$Title</h1>
-                </div>
-             </div>
-          </div>
+        <div class="large-12 columns push-1">
+<h1 style="font-size:2em;margin-bottom:0px">$Title</h1>
+        </div>
     </div>
     </header>
     <!--End Header and Primary Nav-->
