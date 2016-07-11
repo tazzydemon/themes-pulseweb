@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
     <title>{$SiteConfig.Title} | {$Title}</title>
     <script src="{$ThemeDir}/javascript/vendor/custom.modernizr.js"></script>
+    <script async defer type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyApa9i1uWx9twg5mmfF7lFVhzu7fGUNBnY"></script>
     <script>$SiteConfig.CustomJavaScript</script>
 
     <!-- Facebook Pixel Code -->
@@ -87,7 +88,7 @@ var google_remarketing_only = false;
 </div>
 </noscript>
 <!-- End Google Code for Main Website Track Highlanders Jersey Conversion Page -->
-
+$RawText.RAW
 
 </body>
 </html>
