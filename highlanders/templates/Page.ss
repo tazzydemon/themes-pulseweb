@@ -80,7 +80,12 @@ var google_conversion_label = "g9aUCLuzoWcQ2qLrygM";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<script>//google geo for south island
+function successFunction(o){var e=o.coords.latitude,n=o.coords.longitude;console.log(e+" "+n),codeLatLng(e,n)}function errorFunction(){console.log("Geocoder failed")}function codeLatLng(o,e){var n=["southland","otago","west coast","canterbury","marlborough","tasman","nelson"],a=new google.maps.LatLng(o,e);geocoder.geocode({latLng:a},function(o,e){if(e==google.maps.GeocoderStatus.OK)if(o[1]){var a=o;console.log(o),$.each(a,function(o,e){if("locality"==e.types[0]){var a=e.address_components[2].long_name;console.log($.inArray(a.toLowerCase(),n)),$.inArray(a.toLowerCase(),n)>-1&&$("#HighlandersGamePromo").foundation("reveal","open")}})}else console.log("No Geo results found");else console.log("Geocoder failed due to: "+e)})}var geocoder=new google.maps.Geocoder;
+$(document).ready(function(){ //Get the latitude and the longitude;
+if (navigator.geolocation) navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+})
 </script>
 <noscript>
 <div style="display:inline;">
