@@ -22,19 +22,16 @@
   -webkit-font-smoothing: antialiased;
   -webkit-transform: translate3d(0, 0, 0);
   }
-
 @font-face {
   font-family: "foundation-icons";
   src: url("../fonts/foundation-icons.eot");
   src: url("../fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/foundation-icons.woff") format("woff"),
-       url("../fonts/foundation-icons.ttf") format("truetype"),
-       url("../fonts/foundation-icons.svg#fontcustom") format("svg");
+  url("../fonts/foundation-icons.woff") format("woff"),
+  url("../fonts/foundation-icons.ttf") format("truetype"),
+  url("../fonts/foundation-icons.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-
-
+  }
 @import "foundation/_variables", "foundation/components/_global";
 $links: $highlanders-dark-blue;
 $footerlinks: #404040;
@@ -106,7 +103,7 @@ ul li {
   list-style-image: url('../images/bullet.png');
   margin-left: 2em;
   }
-ul.no-bullet.optionset li{ //specificity of above was higher
+ul.no-bullet.optionset li { //specificity of above was higher
   list-style: none;
   }
 ul.button-group li, ul.breadcrumbs li, ul.title-area li, .top-bar ul li {
@@ -911,9 +908,9 @@ a:hover img {
   -moz-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   //to override app.css
-  display:inline-block;
-  background:transparent;
-  font-weight:normal;
+  display: inline-block;
+  background: transparent;
+  font-weight: normal;
 
   &.filled, &.message {
     height: auto;
@@ -967,8 +964,8 @@ label {
   &.checkbox {
     margin-bottom: 1.125em;
     }
-  &.left.inline{
-    font-weight:normal;
+  &.left.inline {
+    font-weight: normal;
     }
   }
 //  &.lightgrey{background-color: #e5eae6;    }
@@ -1018,7 +1015,7 @@ input, select, textarea {
     background-color: $parsley-alert-color;
     border: 1px solid #DAA7AE;
     //to override app.css
-    margin-bottom:1.125em;
+    margin-bottom: 1.125em;
     }
   &.input-bold {
     font-weight: bold;
@@ -1027,12 +1024,10 @@ input, select, textarea {
     font-size: larger;
     }
   }
-
 .file-upload {
   position: relative;
   overflow: hidden;
   margin: 10px; }
-
 .file-upload input.file-input {
   position: absolute;
   top: 0;
@@ -1043,7 +1038,6 @@ input, select, textarea {
   cursor: pointer;
   opacity: 0;
   filter: alpha(opacity=0); }
-
 #accerrors {
   ul {
     margin: -0.2em 0 0.5em 0;
@@ -1059,16 +1053,14 @@ input, select, textarea {
   margin-top: 10px;
   margin-bottom: 0px;
   }
-
-.phone-number{
+.phone-number {
   font-family: Roboto;
   font-size: 2.125em;
   text-align: right;
-  color:$pulse-green;
-  a{
+  color: $pulse-green;
+  a {
     }
   }
-
 #Captcha {
   display: none;
   }
@@ -1167,8 +1159,8 @@ li.af_footer {
       font-weight: 400;
       font-size: emCalc(24px);
       text-align: center;
-      color:$pulse-bright-blue;
-      margin-top:0.4em;
+      color: $pulse-bright-blue;
+      margin-top: 0.4em;
       }
     p {
       font-family: Roboto;
@@ -1178,7 +1170,7 @@ li.af_footer {
       margin-left: 20px;
       margin-right: 20px;
       }
-    .link-button{
+    .link-button {
       position: absolute;
       font-size: emCalc(18px);
       bottom: 22px;
@@ -1187,9 +1179,9 @@ li.af_footer {
       width: 50%;
       left: 25%;
       }
-    .height400{
+    .height400 {
       height: 400px;
-      min-height:initial;
+      min-height: initial;
       }
     }
   .green-cta-panel {
@@ -1312,6 +1304,38 @@ li.af_footer {
 
   }
 #Page .highlanderspromo, #HeroPage .highlanderspromo {
+  .seasonticket {
+    .row {
+      max-width: 85em;
+      }
+    text-align: left;
+    h1 {
+      font-size: 3em;
+      }
+    h2 {
+      font-size: 2.8em;
+      }
+    ol li {
+      font-size: 1.3em;
+      }
+    table {
+      tr.even, tr.alt, tr:nth-of-type(even) {
+        background: $pulse-cool-grey;
+        }
+      th {
+        background-color: $highlanders-yellow;
+        font-size: 1.3em;
+        padding: 15px;
+        }
+      td {
+        font-size: 1.3em;
+        padding: 15px;
+        font-weight: normal;
+        }
+
+      }
+    }
+
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #08283f;
@@ -1329,6 +1353,9 @@ li.af_footer {
     font-family: Roboto;
     font-weight: 900;
     font-size: emCalc(82px); //63
+    .accent {
+      color: #ffffff;
+      }
     }
   h2 {
     color: $highlanders-yellow;
@@ -1336,6 +1363,9 @@ li.af_footer {
     font-weight: 900;
     font-size: emCalc(52px); //39
     margin-bottom: 0px;
+    .accent {
+      color: #ffffff;
+      }
     }
   h3 {
     color: $highlanders-yellow;
@@ -1366,6 +1396,8 @@ li.af_footer {
     margin-right: 15px;
     &.tcs {
       font-size: emCalc(14px);
+      text-align: left;
+      line-height: 16px;
       }
     &.fb {
       font-weight: 300;
@@ -1408,9 +1440,74 @@ li.af_footer {
       &.tcs {
         font-size: emCalc(14px);
         text-align: left;
+        line-height: 18px;
         }
       }
 
+    }
+  .highlanders-ctabutton { //applied to anchor a
+    position: relative;
+    background: $highlanders-yellow;
+    margin: 0 auto;
+    padding: 10px 15px;
+    overflow: hidden;
+    display: inline-block;
+    @include radius(10px);
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+    box-shadow: #000000 4px 3px 5px;
+    -webkit-box-shadow: #000000 4px 3px 5px;
+    -moz-box-shadow: #000000 4px 3px 5px;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    border-color: #a9a9a9;
+    behavior: url(/themes/highlanders-signup/javascript/vendor/PIE.htc);
+    }
+
+  }
+.requestcallform {
+  .bbbutton, .button, input[type="submit"] {
+    width: 100%;
+    -moz-border-radius: 10px;
+    -moz-box-shadow: #404040 0px 0px 10px;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: #6E7849 0 0 10px;
+    -webkit-transition: all 0.5s ease;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-color: #a9a9a9;
+    box-shadow: #404040 4px 3px 5px;
+    color: #000000;
+    display: inline-block;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    margin: auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+    }
+  label {
+    display: none;
+    }
+  input, label {
+    font-size: 1.2em;
+    }
+  .optionsetcontainer {
+    label {
+      display: block;
+      //float: left
+      }
+    ul li {
+      float: left
+      }
     }
   }
 #Page .footer-mega-menu, #HeroPage .footer-mega-menu, #WidePage .footer-mega-menu {
@@ -1437,9 +1534,9 @@ li.af_footer {
     margin-left: 15px;
     margin-right: 15px;
     }
-  .phone-number{
+  .phone-number {
     color: darken($pulse-cool-grey, 30%);
-    a{
+    a {
       color: darken($pulse-cool-grey, 30%);
       }
     text-align: left;
@@ -1525,7 +1622,6 @@ li.af_footer {
 // so vertical align middle can only be obtained with tables
 //  width: 25px; padding-bottom: 100px; margin-bottom: -100px;
 //  }
-
 //specificity mess - sort out later. This should be in above
 #HeroPage a.ctabutton-text, a.ctabutton-text {
   color: white;
@@ -1634,6 +1730,71 @@ li.af_footer {
   font-size: 0.8em;
   font-style: italic;
   }
+#SpeakToTeamForm{
+  background: #ffffff url(/assets/Uploads/promotionalpopups/PUL543-Callback-Pop-Up_1366x768.jpg) no-repeat left center;
+  background-size: auto 80%;
+  background-position: left bottom;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateX(-50%);
+  margin-left:auto; //override the standard 40%
+  width:960px;
+  .requestcallform {
+    .bbbutton, .button, input[type="submit"] {
+      width: auto;
+      @include radius(3px);
+      -webkit-transition:none;
+      -moz-transition:none;
+      transition:none;
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      box-shadow:none;
+      background-color: $pulse-green;
+      border-color: $pulse-green;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 1.8em;
+      line-height: 1.8em;
+      margin: auto;
+      padding: 2px 15px;
+      text-decoration: none;
+      text-align: center;
+      }
+    label {
+      display: none;//inline-block;
+      }
+    input[type="text"]{
+      width:60%;
+      }
+    input, label, textarea {
+      font-size: 1.2em;
+      margin-bottom:0.7em;
+      }
+    .optionsetcontainer {
+      label {
+        display: block;
+        float: none;
+        }
+      ul {
+        font-size:1em;
+        li {
+          float: left
+          }
+        }
+      }
+
+    .parsley-errors-list{
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      }
+    }
+  h3{
+    font-size:2.2em;
+    }
+}
 
 @media only screen and (max-width: $legacy-screen) and (min-width: $small-screen) {
   .hubpanel {
@@ -1875,12 +2036,45 @@ li.af_footer {
       }
     }
   #Page .highlanderspromo, #HeroPage .highlanderspromo {
+    .seasonticket {
+      padding-left: 5px;
+      padding-right: 5px;
+      .columns, .columns .columns {
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+      h1 {
+        font-size: 1.8em;
+        }
+      h2 {
+        font-size: 1.5em;
+        }
+      ol li {
+        font-size: 1.2em;
+        }
+      table {
+        th {
+          background-color: $highlanders-yellow;
+          font-size: 1em;
+          padding: 10px;
+          }
+        td {
+          font-size: 1em;
+          padding: 10px;
+          font-weight: normal;
+          }
+
+        }
+      }
 
     h1, {
       font-size: emCalc(50px);
       }
     h2 {
       font-size: emCalc(28px); //39
+      }
+    .headline {
+      font-size: 1em;
       }
 
     }
@@ -1890,6 +2084,62 @@ li.af_footer {
       display: none;
       }
     }
+  .requestcallform {
+    .bbbutton, .button, input[type="submit"] {
+      width: 100%;
+      -moz-border-radius: 10px;
+      -moz-box-shadow: #404040 0px 0px 10px;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -webkit-border-radius: 10px;
+      -webkit-box-shadow: #6E7849 0 0 10px;
+      -webkit-transition: all 0.5s ease;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: #404040 4px 3px 5px;
+      color: #000000;
+      display: inline-block;
+      font-size: 1em;
+      line-height: 1em;
+      margin: auto;
+      padding: 8px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.5s ease;
+      }
+    label {
+      display: none;
+      }
+    input, label {
+      font-size: 1.2em;
+      }
+    .optionsetcontainer {
+      label {
+        display: block;
+        float: left
+        }
+      ul li {
+        float: left
+        }
+      }
+
+
+    }
+  #SpeakToTeamForm{
+    width:100%;
+    background: #ffffff;
+    .requestcallform {
+      input[type="text"]{
+        width:100%;
+        }
+      .parsley-errors-list{
+        position: relative;
+        top: initial;
+        right: initial;
+        }
+      }
+  }
 
   }
 @media print {
@@ -1898,5 +2148,5 @@ li.af_footer {
     }
   p, ul {
     font-size: emCalc(12px)
-  }
+    }
   }

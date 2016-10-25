@@ -17,7 +17,7 @@
     <script src="{$ThemeDir}/javascript/vendor/custom.modernizr.js"></script>
     <script async defer type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyApa9i1uWx9twg5mmfF7lFVhzu7fGUNBnY"></script>
     <script>$SiteConfig.CustomJavaScript</script>
-
+    <script>var formFilled = false;</script>
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -61,7 +61,9 @@
     <div class="push"></div>
 </div>
     <% include  Footer %>
-
+<% if $ShowModal %>
+    $RequestCallForm
+<% end_if %>
 <script>//alert(window.location)</script>
 <!--[if lte IE 8]>
   <link rel="stylesheet" href="{$ThemeDir}/css/ie.css"/>
@@ -81,10 +83,10 @@ var google_remarketing_only = false;
 /* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
-<script>//google geo for south island
-function successFunction(o){var e=o.coords.latitude,n=o.coords.longitude;console.log(e+" "+n),codeLatLng(e,n)}function errorFunction(){console.log("Geocoder failed")}function codeLatLng(o,e){var n=["southland","otago","west coast","canterbury","marlborough","tasman","nelson"],a=new google.maps.LatLng(o,e);geocoder.geocode({latLng:a},function(o,e){if(e==google.maps.GeocoderStatus.OK)if(o[1]){var a=o;console.log(o),$.each(a,function(o,e){if("locality"==e.types[0]){var a=e.address_components[2].long_name;console.log($.inArray(a.toLowerCase(),n)),$.inArray(a.toLowerCase(),n)>-1&&$("#HighlandersGamePromo").foundation("reveal","open")}})}else console.log("No Geo results found");else console.log("Geocoder failed due to: "+e)})}var geocoder=new google.maps.Geocoder;
+<script>//google geo for south island popup
+function successFunction(o){var e=o.coords.latitude,n=o.coords.longitude;console.log(e+" "+n),codeLatLng(e,n)}function errorFunction(){console.log("Geocoder failed")}function codeLatLng(o,e){var n=["auckland","southland","otago","west coast","canterbury","marlborough","tasman","nelson"],a=new google.maps.LatLng(o,e);geocoder.geocode({latLng:a},function(o,e){if(e==google.maps.GeocoderStatus.OK)if(o[1]){var a=o;console.log(o),$.each(a,function(o,e){if("locality"==e.types[0]){var a=e.address_components[2].long_name;console.log($.inArray(a.toLowerCase(),n)),$.inArray(a.toLowerCase(),n)>-1&&$("#HighlandersGamePromo").foundation("reveal","open")}})}else console.log("No Geo results found");else console.log("Geocoder failed due to: "+e)})}var geocoder=new google.maps.Geocoder;
 $(document).ready(function(){ //Get the latitude and the longitude;
-if (navigator.geolocation) navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+//if (navigator.geolocation) navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
 })
 </script>
 <noscript>
